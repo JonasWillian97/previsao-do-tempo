@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.container h1{
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container h4{
+  color: #fff;
+  font-size: 20px;
+}
+.container input {
+  height: 36px;
+  width: 300px;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  padding: 6px;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.container button{
+  padding: 8px 5px;
+  background-color: #1D85D8;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.container-details{
+  background-color: #fff;
+    width: 400px;
+  border-radius: 4px;
+  margin-top: 20px;
+  color: #1D85D8;
+}
+
+.container img{
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 80px;
+}
+
+.container h5{
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .container h1{
+    font-size: 28px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container h4{
+    font-size: 18px;
+  }
+
+  .container input{
+    max-width: 250px;
+    font-size: 16px;
+  }
+
+  .container-details {
+    max-width: 90% ;
+  }
+
+  .container h5{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  
+  .container h1{
+    font-size: 22px;
+  }
+
+  .container h4{
+    font-size: 14px;
+  }
+
+  .container input{
+    max-width: 180px;
+    font-size: 14px;
+  }
+
+  .container-details {
+    max-width: 80% ;
+  }
+
+  .container h5{
+    font-size: 14px;
   }
 }
